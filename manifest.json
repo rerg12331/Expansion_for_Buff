@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "BUFF163",
+    "version": "1.0",
+    "description": "Расширение, предоставляющее следующие возможности: 1. Отображение общей стоимости стикеров. 2. Вывод минимальной цены для удобства при торговле. 3. Копирование названий стикеров. 4. Отображение цены стикера при наведении на него. 5. Кнопка 'Похожее на стиме' для поиска аналогичных комбинаций стикеров на Steam.",
+    "content_scripts": [
+      {
+        "matches": ["https://buff.163.com/goods/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": [
+      "https://prices.csgotrader.app/latest/prices_v6.json",
+      "https://steamcommunity.com/*",
+      "clipboardWrite"
+    ],
+    "icons": {
+  "16": "icons/enabled-icon.png",
+  "48": "icons/enabled-icon.png",
+  "128": "icons/enabled-icon.png"
+}
+}
